@@ -7,6 +7,7 @@ let removedTodos = [];
 //-------------------F-U-N-C-T-I-O-N-S------------------
 //-------------------------------------------------------
 function initTodoList(todoListFromServer) {
+    console.log("todolist ", todoListFromServer.length);
     todos = [];
     proceedTodos = [];
     finishedTodos = [];
