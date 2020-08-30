@@ -27,7 +27,7 @@ function addNewTodo(todoStatus) {
                 credentials: 'same-origin',
                 body: JSON.stringify(todo)
             };
-            fetch("https://github.com/megyu84/demo/todoList/", fetchOptions)
+            fetch("https://my-json-server.typicode.com/megyu84/demo/todoList/", fetchOptions)
                 .then(
                     resp => resp.json(),
                     err => console.error(err)

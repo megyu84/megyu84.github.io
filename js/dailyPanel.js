@@ -11,7 +11,7 @@ function initDailyPanel() {
         mode: "cors",
         cache: "default"
     };
-    const fetchData = fetch("https://github.com/megyu84/demo/log", fetchInit);
+    const fetchData = fetch("https://my-json-server.typicode.com/megyu84/demo/log", fetchInit);
     fetchData.then(data => data.json()).then(data => {
         createDailyList(data);
         uploadTodoArray();
@@ -254,7 +254,7 @@ function uploadTodoArray() {
         mode: "cors",
         cache: "default"
     };
-    const fetchData = fetch("https://github.com/megyu84/demo/todoList", fetchInit);
+    const fetchData = fetch("https://my-json-server.typicode.com/megyu84/demo/todoList", fetchInit);
     fetchData.then(data => data.json()).then(todos => {
         todoArray = todos.slice();
         //console.log(todoArray);

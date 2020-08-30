@@ -42,7 +42,7 @@ function updateDB(todo) {
         credentials: 'same-origin',
         body: JSON.stringify(todo)
     };
-    fetch("https://github.com/megyu84/demo/todoList/" + todo.id, fetchOptions)
+    fetch("https://my-json-server.typicode.com/megyu84/demo/todoList/" + todo.id, fetchOptions)
         .then(resp => resp.json())
         .then(resp => {
             loadData();
@@ -65,7 +65,7 @@ function loadData() {
         mode: "cors",
         cache: "default"
     };
-    const fetchData = fetch("https://github.com/megyu84/demo/todoList", fetchInit);
+    const fetchData = fetch("https://my-json-server.typicode.com/megyu84/demo/todoList", fetchInit);
     fetchData.then(data => data.json()).then(data => initTodoList(data));
 }
 
@@ -89,7 +89,7 @@ function loadLogDB() {
         mode: "cors",
         cache: "default"
     };
-    const fetchData = fetch("https://github.com/megyu84/demo/log", fetchInit);
+    const fetchData = fetch("https://my-json-server.typicode.com/megyu84/demo/log", fetchInit);
     fetchData.then(data => data.json()).then(
         data => initLogDiv(data),
         error => console.log("log olvasási hiba ", error)
@@ -121,7 +121,7 @@ function addNewLogItem(todo) {
         credentials: 'same-origin',
         body: JSON.stringify(logItem)
     };
-    fetch("https://github.com/megyu84/demo/log/", fetchOptions)
+    fetch("https://my-json-server.typicode.com/megyu84/demo/log/", fetchOptions)
         .then(
             resp => resp.json(),
             err => console.error("xxx", err)
