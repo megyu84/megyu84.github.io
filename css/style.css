@@ -1,0 +1,131 @@
+/* @media (max-width: 768px) {
+    #rightPanel{
+        display: none;
+    }
+} */
+#newTodoAlert{
+    visibility: visible;
+    margin-top: 10px;
+}
+
+body{
+    background-image: url(/img/watercolor-background-1.jpg);
+}
+.container-fluid{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+}
+
+.form-group, .table{
+    background-color: rgba(255,255,255,0.7);
+}
+.alreadyExistingTd{
+    /* width: 100px;
+    height: 100px; */
+    animation-name: tdAnimation;
+    animation-duration: 4s;
+}
+@keyframes tdAnimation {
+    from {background-color: transparent;}
+    to {background-color: yellow;}
+}
+.alreadyExistingSpan{
+    animation-name: spanAnimation;
+    animation-duration: 4s;
+}
+@keyframes spanAnimation {
+    from {background-color: rgba(255,255,255,0.7);}
+    to {background-color: yellow;}
+}
+#logContainer{
+    display: block;
+    /* width: 280px; */
+    max-height: 700px;
+    overflow-y: auto;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 5px;
+
+}
+
+.logDiv{
+     width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.7);;
+}
+.logDiv span{
+    margin:10px;
+}
+.todoSpan{
+    display: block;
+    font-weight: bolder;
+    text-align: justify;
+}
+.labelSpan{
+    font-weight: bold;
+    background-color: snow;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px;
+
+}
+.todoLabelSpan{
+    color:rgb(255, 0, 170);
+}
+.proceedLabelSpan{
+    color:orange;
+}
+.finishedLabelSpan{
+    color:seagreen;
+}
+.removedLabelSpan{
+    color:red;
+}
+#iconsDiv{
+    margin-top: 60px;
+    background-color: rgba(255,255,255,0.7);   
+}
+.todoIcon{
+    width: 30px;
+    margin: 5px;
+}
+#selectedTodoIcon{
+    width: 30px;
+    margin: auto;
+    display: block;
+}
+#todoIconDiv{
+    display: inline-block;
+    width: 50px;
+}
+#newTodoInput{
+    display: inline-block;
+    width: calc(100% - 60px);
+    /* width: 460px; */
+}
+.btn-group{
+    margin-top: 10px;
+
+}
+.form-group{
+    padding: 10px;
+
+}
+#savedDiv{
+    width: auto;
+}
+#rightPanel{
+    /* background-color: springgreen; */
+    margin-top: 60px;
+    width: auto;
+    max-height: 800px;
+    overflow-y: auto;
+    /* background-color: rgba(255,255,255,0.7); */
+    border-radius: 5px;
+}
+#logButtonsDiv{
+    margin: 0px;
+
+}
+#iconsForSmallScreen{
+    margin-bottom: 15px;
+}
